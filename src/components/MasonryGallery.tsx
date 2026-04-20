@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 interface GalleryImage {
   src: string;
@@ -35,14 +35,14 @@ export default function MasonryGallery({ images, categories }: MasonryGalleryPro
       {/* Masonry Grid */}
       <div className="masonry-gallery__grid">
         {filteredImages.map((img, i) => (
-          <div 
-            key={i} 
+          <div
+            key={i}
             className="masonry-gallery__item"
             onClick={() => setSelectedImage(img)}
           >
-            <img 
-              src={img.src} 
-              alt={img.caption} 
+            <img
+              src={img.src}
+              alt={img.caption}
               className="masonry-gallery__image"
               loading="lazy"
             />
@@ -55,11 +55,11 @@ export default function MasonryGallery({ images, categories }: MasonryGalleryPro
 
       {/* Lightbox Modal */}
       {selectedImage && (
-        <div 
+        <div
           className="masonry-gallery__lightbox"
           onClick={() => setSelectedImage(null)}
         >
-          <div 
+          <div
             className="masonry-gallery__lightbox-content"
             onClick={(e) => e.stopPropagation()}
           >

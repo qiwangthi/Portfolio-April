@@ -1,5 +1,3 @@
-import { Language } from '../i18n/translations';
-
 export interface ProcessStep {
   title: string;
   description: string;

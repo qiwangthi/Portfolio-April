@@ -81,9 +81,7 @@ export default function Hero() {
           <span className="hero__name-line">{t.hero.name}</span>
         </h1>
         <p className="hero__title">
-          <span className="hero__title-bracket">&lt;</span>
-          {' '}{t.hero.title}{' '}
-          <span className="hero__title-bracket">/&gt;</span>
+          {t.hero.title}
         </p>
         <p className="hero__subtitle">{t.hero.subtitle}</p>
         <div className="hero__actions">
