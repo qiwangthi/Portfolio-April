@@ -6,7 +6,23 @@ import { projects } from '../data/projects';
 export default function Projects() {
   const { language, t } = useLanguage();
   const [ref, isVisible] = useInView<HTMLElement>();
-  const projectList = projects[language];
+  const allProjects = projects[language];
+  const webAppProjects = allProjects.filter((project) =>
+    project.category.toLowerCase().includes('web app')
+  );
+  const remainingProjects = allProjects.filter(
+    (project) =>
+      !project.category.toLowerCase().includes('web app') &&
+      project.id !== 'photoportfolio'
+  );
+  const photographyProjects = allProjects.filter(
+    (project) => project.id === 'photoportfolio'
+  );
+  const projectList = [
+    ...webAppProjects,
+    ...remainingProjects,
+    ...photographyProjects,
+  ];
 
   return (
     <section id="projects" className="section" ref={ref}>
