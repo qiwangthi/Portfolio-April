@@ -1,21 +1,6 @@
 import { useLanguage } from '../i18n/LanguageContext';
 import { useEffect, useState } from 'react';
 
-const GREETINGS = [
-  { text: 'Hello', lang: 'EN' },
-  { text: 'Hallo', lang: 'DE' },
-  { text: 'Hola', lang: 'ES' },
-  { text: 'Bonjour', lang: 'FR' },
-  { text: 'Ciao', lang: 'IT' },
-  { text: '你好', lang: 'ZH' },
-  { text: 'こんにちは', lang: 'JA' },
-  { text: '안녕하세요', lang: 'KO' },
-  { text: 'Olá', lang: 'PT' },
-  { text: 'Привет', lang: 'RU' },
-  { text: 'مرحبا', lang: 'AR' },
-  { text: 'Hej', lang: 'SV' },
-];
-
 const ORBS = [
   { size: 400, x: 15, y: 20, color: '108, 99, 255', delay: 0, duration: 20 },
   { size: 300, x: 70, y: 60, color: '0, 201, 167', delay: 5, duration: 25 },
@@ -26,23 +11,10 @@ const ORBS = [
 export default function Hero() {
   const { t } = useLanguage();
   const [visible, setVisible] = useState(false);
-  const [greetingIndex, setGreetingIndex] = useState(0);
-  const [greetingFade, setGreetingFade] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => setVisible(true), 100);
     return () => clearTimeout(timer);
-  }, []);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setGreetingFade(false);
-      setTimeout(() => {
-        setGreetingIndex((prev) => (prev + 1) % GREETINGS.length);
-        setGreetingFade(true);
-      }, 400);
-    }, 2500);
-    return () => clearInterval(interval);
   }, []);
 
   return (
@@ -72,10 +44,7 @@ export default function Hero() {
       <div className={`hero__content ${visible ? 'hero__content--visible' : ''}`}>
         <div className="hero__badge">
           <span className="hero__badge-dot" />
-          <span className={`hero__greeting-text${greetingFade ? ' hero__greeting-text--visible' : ''}`}>
-            {GREETINGS[greetingIndex].text}
-          </span>
-          <span className="hero__greeting-comma">,</span>
+          <span className="hero__greeting-text hero__greeting-text--visible">Hello, I'm</span>
         </div>
         <h1 className="hero__name">
           <span className="hero__name-line">{t.hero.name}</span>

@@ -58,7 +58,7 @@ const en: Translations = {
     greeting: 'Hello, I\'m',
     name: 'Qi Wang',
     title: 'UX Designer',
-    subtitle: 'I craft intuitive digital experiences that bridge the gap between user needs and business goals. With a human-centered approach, I transform complex problems into elegant, accessible solutions.',
+    subtitle: 'bridging healthcare empathy with AI-driven product thinking.',
     cta: 'View My Work',
   },
   about: {
@@ -140,7 +140,7 @@ const de: Translations = {
     greeting: 'Hallo, ich bin',
     name: 'Qi Wang',
     title: 'UX Designerin',
-    subtitle: 'Ich gestalte intuitive digitale Erlebnisse, die Nutzerbedürfnisse und Geschäftsziele verbinden. Mit einem menschzentrierten Ansatz verwandle ich komplexe Probleme in elegante, zugängliche Lösungen.',
+    subtitle: 'bridging healthcare empathy with AI-driven product thinking.',
     cta: 'Meine Arbeiten ansehen',
   },
   about: {
