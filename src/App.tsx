@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { LanguageProvider } from './i18n/LanguageContext';
 import { ThemeProvider } from './theme/ThemeContext';
 import Navbar from './components/Navbar';
@@ -15,6 +15,7 @@ export default function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/project/finflow" element={<Navigate to="/project/maiq" replace />} />
             <Route path="/project/:id" element={<ProjectPage />} />
           </Routes>
         </BrowserRouter>

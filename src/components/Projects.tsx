@@ -7,7 +7,7 @@ export default function Projects() {
   const { language, t } = useLanguage();
   const [ref, isVisible] = useInView<HTMLElement>();
   const allProjects = projects[language];
-  const projectOrder = ['finflow', 'shopscape', 'learnhub'];
+  const projectOrder = ['maiq', 'shopscape', 'learnhub'];
   const orderMap = new Map(projectOrder.map((id, index) => [id, index]));
   const projectList = [...allProjects].sort((a, b) => {
     if (a.id === 'photoportfolio') return 1;

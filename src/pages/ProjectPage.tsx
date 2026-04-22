@@ -9,7 +9,7 @@ export default function ProjectPage() {
   const { id } = useParams<{ id: string }>();
   const { language, t } = useLanguage();
   const allProjects = projects[language];
-  const projectOrder = ['finflow', 'shopscape', 'learnhub'];
+  const projectOrder = ['maiq', 'shopscape', 'learnhub'];
   const orderMap = new Map(projectOrder.map((projectId, index) => [projectId, index]));
   const orderedProjects = [...allProjects].sort((a, b) => {
     if (a.id === 'photoportfolio') return 1;
