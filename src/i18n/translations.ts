@@ -190,9 +190,9 @@ const de: Translations = {
         icon: '📐',
       },
       {
-        title: 'Design Systems',
-        description: 'Building scalable, consistent component libraries and design tokens that accelerate team productivity.',
-        icon: '🧩',
+        title: 'Vibe Coding',
+        description: 'Translating designs into functional code intuitively. Using natural language and AI-assisted development tools to rapidly generate front-end components and bridge the gap between design and engineering.',
+        icon: '💻',
       },
       {
         title: 'Technical Foundation',
