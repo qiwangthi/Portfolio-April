@@ -66,7 +66,7 @@ const en: Translations = {
     description: [
       'I\'m a UX design student with a background in nursing, bringing years of clinical experience into the world of digital design. My time in healthcare shaped how I understand people—their needs, behaviors, and the importance of clarity in high-stakes environments. Today, I translate that perspective into user-centered design, creating intuitive and meaningful experiences.',
       'I also work at the intersection of design and technology, using AI tools to enhance my creative process and build innovative AI-driven products. My approach combines empathy, critical thinking, and emerging technologies to design solutions that are not only functional, but genuinely impactful.',
-      
+
     ],
   },
   skills: {
@@ -101,6 +101,21 @@ const en: Translations = {
         title: 'Strategy & Workshop',
         description: 'Facilitating design thinking workshops, stakeholder alignment sessions, and product strategy development.',
         icon: '💡',
+      },
+      {
+        title: 'Healthcare UX',
+        description: 'Designing patient- and clinician-focused journeys that prioritize clarity, trust, and safety in sensitive healthcare contexts.',
+        icon: '🏥',
+      },
+      {
+        title: 'AI Product Design',
+        description: 'Shaping AI-powered product experiences with transparent interactions, human oversight, and practical value for real users.',
+        icon: '🤖',
+      },
+      {
+        title: 'Service Blueprinting',
+        description: 'Mapping end-to-end touchpoints across digital and offline channels to align teams and improve the full user journey.',
+        icon: '🗺️',
       },
     ],
   },
@@ -175,14 +190,29 @@ const de: Translations = {
         icon: '📐',
       },
       {
-        title: 'Design Systeme',
-        description: 'Aufbau skalierbarer, konsistenter Komponentenbibliotheken und Design Tokens für mehr Teamproduktivität.',
-        icon: '🧩',
+        title: 'Vibe Coding',
+        description: 'Translating designs into functional code intuitively. Using natural language and AI-assisted development tools to rapidly generate front-end components and bridge the gap between design and engineering.',
+        icon: '💻',
       },
       {
-        title: 'Strategie & Workshops',
-        description: 'Moderation von Design Thinking Workshops, Stakeholder-Alignment und Produktstrategieentwicklung.',
-        icon: '💡',
+        title: 'Technical Foundation',
+        description: 'Basic proficiency in HTML, CSS, JavaScript, and Java. Understanding the underlying code structures allows me to design with technical constraints in mind, communicate effectively with engineering teams, and ensure my designs are highly feasible to build.',
+        icon: '</>',
+      },
+      {
+        title: 'Healthcare UX',
+        description: 'Gestaltung von patienten- und klinikzentrierten Journeys mit Fokus auf Klarheit, Vertrauen und Sicherheit in sensiblen Gesundheitskontexten.',
+        icon: '🏥',
+      },
+      {
+        title: 'AI Product Design',
+        description: 'Konzeption KI-gestuetzter Produkterlebnisse mit transparenten Interaktionen, menschlicher Kontrolle und praktischem Nutzwert.',
+        icon: '🤖',
+      },
+      {
+        title: 'Service Blueprinting',
+        description: 'Abbildung von End-to-End Touchpoints ueber digitale und analoge Kanaele, um Teams auszurichten und die gesamte Journey zu verbessern.',
+        icon: '🗺️',
       },
     ],
   },
