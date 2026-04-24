@@ -40,7 +40,7 @@ client: '{Hochschule}'    → z.B. 'Hochschule München'
 
 ### Schritt 3 — Projektinhalte personalisieren
 
-In `src/data/projects.ts` sind Beispielprojekte (FinFlow, ShopScape, LearnHub, HealthMate) als **Inspiration** enthalten. Der Studierende soll:
+In `src/data/projects.ts` sind Beispielprojekte (FinFlow, Smart Coffee Machine, LearnHub, HealthMate) als **Inspiration** enthalten. Der Studierende soll:
 
 1. Das `photoportfolio`-Projekt mit **eigenen Fotos** befüllen (Schritt 4)
 2. Die anderen Projekte entweder **anpassen** oder durch eigene Projekte **ersetzen**
